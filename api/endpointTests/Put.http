@@ -1,0 +1,19 @@
+@apiUrl = http://localhost:3000/api
+
+# Alterar uma viagem
+PUT {{apiUrl}}/viagens
+Content-Type: application/json
+
+{
+    "_id": "6266b8b65191588281cbfed3",
+    "cidadePartida":"Passo Fundo",
+    "estadoPartida":"RS",
+    "cidadeDestino":"Curitiba",
+    "estadoDestino":"PR",
+    "dataInicio":"12/22/2021",
+    "dataFim":"12/30/2021",
+    "custoUnit":3049.99,
+    "passageiros":98,
+    "ciaAerea":"Azul"
+}
+###

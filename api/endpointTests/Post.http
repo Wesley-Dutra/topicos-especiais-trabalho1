@@ -1,0 +1,69 @@
+@apiUrl = http://localhost:3000/api
+
+# Inserir uma nova viagem
+POST {{apiUrl}}/viagens
+Content-Type: application/json
+
+{
+    "cidadePartida":"Passo Fundo",
+    "estadoPartida":"RS",
+    "cidadeDestino":"Curitiba",
+    "estadoDestino":"PR",
+    "dataInicio":"12/22/2021",
+    "dataFim":"12/30/2021",
+    "custoUnit":2650,
+    "passageiros":195,
+    "ciaAerea":"Latan"
+}
+###
+
+# Inserir uma nova viagem sem cidade de partida (teste de validação)
+POST {{apiUrl}}/viagens
+Content-Type: application/json
+
+{
+    "cidadePartida":"",
+    "estadoPartida":"RS",
+    "cidadeDestino":"Curitiba",
+    "estadoDestino":"PR",
+    "dataInicio":"12/22/2021",
+    "dataFim":"12/30/2021",
+    "custoUnit":2650,
+    "passageiros":195,
+    "ciaAerea":"Gol"
+}
+###
+
+# Inserir uma nova viagem com estado contendo mais de 2 caracteres (teste de validação)
+POST {{apiUrl}}/viagens
+Content-Type: application/json
+
+{
+    "cidadePartida":"Passo Fundo",
+    "estadoPartida":"RSs",
+    "cidadeDestino":"Curitiba",
+    "estadoDestino":"PR",
+    "dataInicio":"12/22/2021",
+    "dataFim":"12/30/2021",
+    "custoUnit":2650,
+    "passageiros":195,
+    "ciaAerea":"Gol"
+}
+###
+
+# Inserir uma nova viagem com data maior que a data do momento da inserção (teste de validação)
+POST {{apiUrl}}/viagens
+Content-Type: application/json
+
+{
+    "cidadePartida":"Passo Fundo",
+    "estadoPartida":"RS",
+    "cidadeDestino":"Curitiba",
+    "estadoDestino":"PR",
+    "dataInicio":"12/25/2022",
+    "dataFim":"12/30/2021",
+    "custoUnit":2650,
+    "passageiros":195,
+    "ciaAerea":"Gol"
+}
+###

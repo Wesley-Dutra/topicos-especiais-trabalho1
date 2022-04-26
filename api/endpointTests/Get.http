@@ -1,0 +1,11 @@
+@apiUrl = http://localhost:3000/api
+
+# Obter a lista de viagens
+GET {{apiUrl}}/viagens
+Content-Type: application/json
+###
+
+# Obter viagens filtrando
+GET {{apiUrl}}/viagens/filtro/RS
+Content-Type: application/json
+###

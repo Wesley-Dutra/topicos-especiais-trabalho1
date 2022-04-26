@@ -1,0 +1,150 @@
+body {
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  width: max-content;
+  background-color: #545680;
+}
+
+.app-header {
+  background-color: #2b2b32;
+  color: white;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(18px + 2vmin);
+  font-weight: 350;
+  overflow-x: hidden;
+}
+
+.app-header p {
+  text-align: left;
+  padding-left: 50px;
+  border-bottom: 4px solid #545680;
+}
+
+.app-main {
+  background-color: #545680;
+  width: 100vw;
+  min-height: 65vh;
+  margin-bottom: 25px;
+}
+
+.btn-padrao {
+  background-color: #272e3a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.btn-padrao:hover {
+  background-color: #22232b
+}
+.btn-padrao:active {
+  background-color: #1a1e25;
+}
+
+.btn-op {
+  background-color: #444470;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin: 3px;
+}
+
+.btn-op:hover {
+  background-color: #3e3e66;
+  color: white;
+}
+
+.btn-op:active {
+  background-color: #3a3a5c;
+  color: white;
+}
+
+.div-table {
+  max-height: 450px;
+  width: 90%;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  margin: auto;
+}
+
+body::-webkit-scrollbar, .div-table::-webkit-scrollbar {
+  background-color: #25252b;
+  width: 10px;
+  height: 10px;
+}
+
+.div-table::-webkit-scrollbar-corner {
+  visibility: hidden;
+}
+
+body::-webkit-scrollbar-thumb, .div-table::-webkit-scrollbar-thumb {
+  background-color: #444470;
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb:active, .div-table::-webkit-scrollbar-thumb:active {
+  background-color: #373757;
+}
+
+.table.table-striped.table-dark {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.app-form {
+  background-image: linear-gradient(to top left, #45476c, #22232b);
+  margin: auto;
+  margin-top: 25px;
+}
+
+.div-form {
+  width: 80%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.app-form label {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.app-footer {
+  background-color: #25252b;
+  color: white;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-footer p:nth-child(1) {
+  font-size: calc(12px + 1vmin);
+}
+.app-footer p:nth-child(2) {
+  font-size: calc(6px + 1vmin);
+}
+
+@media (max-width: 575px) {
+  .app-form {
+    width: 100vw;
+    padding: 35px 0;
+  }
+} @media (min-width: 576px) {
+  .app-form {
+    width: 575px;
+    padding: 10px 35px;
+    box-shadow: 7px 7px 9px rgba(0, 0, 0, 0.375);
+  }
+}

@@ -1,0 +1,6 @@
+@apiUrl = http://localhost:3000/api
+
+# Excluir uma viagem pelo id
+DELETE {{apiUrl}}/viagens/6266b8b65191588281cbfed3
+Content-Type: application/json
+###
