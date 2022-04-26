@@ -75,7 +75,6 @@ function App() {
         </header>
         <ViagensList 
           viagens={viagens}
-          onClickAtualizar={onClickAtualizar}
           inserir={inserir}
           excluir={excluir}
           editar={editar}/>

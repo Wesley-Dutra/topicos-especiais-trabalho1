@@ -59,8 +59,8 @@ const ViagensForm = (props) => {
                     </div>
                 </div>
                 <div>
-                <button onClick={props.salvar} class='btn-padrao'>Salvar</button>
-                <button onClick={props.cancelar} class='btn-padrao'>Cancelar</button>
+                <button onClick={props.salvar} class='btn-padrao btn-opc'>Salvar</button>
+                <button onClick={props.cancelar} class='btn-padrao btn-opc'>Cancelar</button>
                 </div>
             </form>
         </main>

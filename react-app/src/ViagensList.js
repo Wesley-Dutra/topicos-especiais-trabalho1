@@ -3,7 +3,6 @@ import './App.css'
 
 const ViagensList = (props) => (
     <main class='app-main'>
-        <button onClick={props.onClickAtualizar} class='btn-padrao'>Atualizar</button>
         <div class='div-table'>    
             <table className="table table-striped table-dark">
                 <thead>

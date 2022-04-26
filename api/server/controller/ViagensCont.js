@@ -36,7 +36,7 @@ module.exports = {
                 { estadoDestino: { $regex: req.params.filtro, $options: "i" } },
                 { ciaAerea: { $regex: req.params.filtro, $options: "i" } },
             ],
-        } ).sort({ ciaAerea: 1 }).exec();
+        } ).sort({ cidadePartida: 1 }).exec();
         res.json(objetos);
     },
 };

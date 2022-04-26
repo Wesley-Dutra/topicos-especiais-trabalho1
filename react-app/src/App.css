@@ -50,6 +50,23 @@ body {
   background-color: #1a1e25;
 }
 
+.btn-opc:nth-child(1) {
+  margin-right: 10px;
+}
+.btn-opc:nth-child(2) {
+  margin-left: 10px;
+}
+
+.filtro-input {
+  background-color: #22232b;
+  width: 250px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 10px;
+  padding: 2px 4px;
+  outline: none;
+}
+
 .btn-op {
   background-color: #444470;
   color: white;
@@ -75,6 +92,7 @@ body {
   overflow-y: scroll;
   overflow-x: scroll;
   margin: auto;
+  margin-top: 45px;
 }
 
 body::-webkit-scrollbar, .div-table::-webkit-scrollbar {
